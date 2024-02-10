@@ -807,7 +807,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4257397652188578, guid: ef2beca9f8c75304b94167c309fbc0ce, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -0.72
       objectReference: {fileID: 0}
     - target: {fileID: 4257397652188578, guid: ef2beca9f8c75304b94167c309fbc0ce, type: 3}
       propertyPath: m_LocalPosition.y
@@ -2231,7 +2231,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5958784674207188819, guid: 8973f858e3dca5146ae11dc56ee67529, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.96
+      value: -11.61
       objectReference: {fileID: 0}
     - target: {fileID: 5958784674207188819, guid: 8973f858e3dca5146ae11dc56ee67529, type: 3}
       propertyPath: m_LocalPosition.y
@@ -2239,7 +2239,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5958784674207188819, guid: 8973f858e3dca5146ae11dc56ee67529, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 17.72
+      value: 24.6
       objectReference: {fileID: 0}
     - target: {fileID: 5958784674207188819, guid: 8973f858e3dca5146ae11dc56ee67529, type: 3}
       propertyPath: m_LocalRotation.w
@@ -2272,8 +2272,38 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 5555866298257473042, guid: 8973f858e3dca5146ae11dc56ee67529, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1874045935827780443}
   m_SourcePrefab: {fileID: 100100000, guid: 8973f858e3dca5146ae11dc56ee67529, type: 3}
+--- !u!1 &1874045935827780442 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5555866298257473042, guid: 8973f858e3dca5146ae11dc56ee67529, type: 3}
+  m_PrefabInstance: {fileID: 1874045935827780441}
+  m_PrefabAsset: {fileID: 0}
+--- !u!195 &1874045935827780443
+NavMeshAgent:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1874045935827780442}
+  m_Enabled: 1
+  m_AgentTypeID: 0
+  m_Radius: 0.5
+  m_Speed: 3.5
+  m_Acceleration: 8
+  avoidancePriority: 50
+  m_AngularSpeed: 120
+  m_StoppingDistance: 0
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 1
+  m_AutoRepath: 1
+  m_Height: 2
+  m_BaseOffset: 0
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 4
 --- !u!1001 &5384237535985638338
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2326,9 +2356,33 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4509444345857731890, guid: 29a6bf6e06d46c545a718c2730626927, type: 3}
+      propertyPath: weight
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4625213043947661092, guid: 29a6bf6e06d46c545a718c2730626927, type: 3}
+      propertyPath: m_ClearFlags
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4625213043947661092, guid: 29a6bf6e06d46c545a718c2730626927, type: 3}
+      propertyPath: orthographic
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4625213043947661092, guid: 29a6bf6e06d46c545a718c2730626927, type: 3}
       propertyPath: field of view
       value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 4625213043947661092, guid: 29a6bf6e06d46c545a718c2730626927, type: 3}
+      propertyPath: m_FOVAxisMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4625213043947661092, guid: 29a6bf6e06d46c545a718c2730626927, type: 3}
+      propertyPath: m_FocalLength
+      value: 32.96973
+      objectReference: {fileID: 0}
+    - target: {fileID: 4625213043947661092, guid: 29a6bf6e06d46c545a718c2730626927, type: 3}
+      propertyPath: m_projectionMatrixMode
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7699396364432208941, guid: 29a6bf6e06d46c545a718c2730626927, type: 3}
       propertyPath: m_LocalPosition.x
