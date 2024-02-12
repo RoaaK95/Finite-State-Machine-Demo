@@ -20,18 +20,18 @@ public class Idle : State
     {
         if (CanSeePlayer())
         {
-          //  _nextState = new Pursue(_npc, _agent, _anim, _player);
+            _nextState = new Pursue(_npc, _agent, _anim, _player);
             _stage = EVENT.EXIT;
         }
 
         else if (Random.Range(0, 100) < 10)
         {
-            //_nextState = new Walk(_npc, _agent, _anim, _player);
+            _nextState = new Walk(_npc, _agent, _anim, _player);
             _stage = EVENT.EXIT;
         }
     }
 
-    public override void Exit() 
+    public override void Exit()
     {
         _anim.ResetTrigger("isIdle");
         base.Exit();
