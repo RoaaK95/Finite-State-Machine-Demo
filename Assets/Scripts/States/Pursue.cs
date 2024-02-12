@@ -25,7 +25,7 @@ public class Pursue : State
         {
             if (CanAttackPlayer())
             {
-                // _nextState = new Attack(_npc, _agent, _anim, _player);
+                _nextState = new Attack(_npc, _agent, _anim, _player);
                 _stage = EVENT.EXIT;
             }
             else if (!CanSeePlayer())

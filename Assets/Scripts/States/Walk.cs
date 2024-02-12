@@ -32,9 +32,9 @@ public class Walk : State
 
     public override void Update()
     {
-        if(_agent.remainingDistance<1)
+        if (_agent.remainingDistance < 1)
         {
-            if(_currentIndex>= GameEnvironment.Singleton._Checkpoints.Count-1)
+            if (_currentIndex >= GameEnvironment.Singleton._Checkpoints.Count - 1)
             {
                 _currentIndex = 0;
             }
@@ -44,12 +44,12 @@ public class Walk : State
             }
             _agent.SetDestination(GameEnvironment.Singleton._Checkpoints[_currentIndex].transform.position);
         }
-        if(CanSeePlayer())
+        if (CanSeePlayer())
         {
-            // _nextState = new Pursue(_npc, _agent, _anim, _player);
+            _nextState = new Pursue(_npc, _agent, _anim, _player);
             _stage = EVENT.EXIT;
         }
-         
+
 
     }
 
