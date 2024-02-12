@@ -48,17 +48,6 @@ public class State
         return this;
     }
 
-    public bool IsPlayerBehind()
-    {
-        Vector3 direction = _npc.transform.position - _player.position;
-        float angle = Vector3.Angle(direction, _npc.transform.position);
-        if (direction.magnitude < 2 && angle < 30)
-        {
-            return true;
-        }
-        return false;
-    }
-
     public bool CanSeePlayer()
     {
         Vector3 direction = _player.position - _npc.transform.position;

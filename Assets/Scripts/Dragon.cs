@@ -26,4 +26,12 @@ public class Dragon : MonoBehaviour
     {
         _currentState = _currentState.Process();
     }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Trap"))
+        {
+            _currentState = new Die(gameObject, _agent, _anim, _player);
+        }
+    }
 }

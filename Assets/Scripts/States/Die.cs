@@ -8,6 +8,7 @@ public class Die : State
     public Die(GameObject _npc, NavMeshAgent _agent, Animator _anim, Transform _player) : base(_npc, _agent, _anim, _player)
     {
         _name = STATE.DIE;
+        _agent.isStopped = true;
     }
 
     public override void Enter()
@@ -18,10 +19,10 @@ public class Die : State
 
     public override void Update()
     {
-        
+
     }
-    public override void Exit() 
-    { 
+    public override void Exit()
+    {
         base.Exit();
     }
 }

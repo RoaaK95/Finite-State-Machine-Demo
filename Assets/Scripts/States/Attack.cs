@@ -10,12 +10,13 @@ public class Attack : State
     public Attack(GameObject _npc, NavMeshAgent _agent, Animator _anim, Transform _player) : base(_npc, _agent, _anim, _player)
     {
         _name = STATE.ATTACK;
+        _agent.isStopped = true;
     }
 
     public override void Enter()
     {
         _anim.SetTrigger("isAttacking");
-        _agent.isStopped = true;
+        
         base.Enter();
     }
 
