@@ -10,7 +10,7 @@ public class Dragon : MonoBehaviour
     private Animator _anim;
     [SerializeField] private Transform _player;
     private float _startTime = 2.0f;
-    private float _freq = 1.0f;
+    private float _freq = 0.5f;
     void Awake()
     {
         _agent = GetComponent<NavMeshAgent>();

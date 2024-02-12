@@ -18,7 +18,7 @@ public class Attack : State
     {
         _anim.SetTrigger("isAttacking");
         _agent.isStopped = true;
-        _audioSource.PlayOneShot(_FireSfx);
+        //_audioSource.PlayOneShot(_FireSfx);
         base.Enter();
     }
 

@@ -20,7 +20,12 @@ public class Pursue : State
 
     public override void Update()
     {
-        _agent.SetDestination(_player.position);
+        Vector3 distance = _agent.transform.position - _player.transform.position;
+        if (distance.magnitude > 8f)
+        {
+            _agent.SetDestination(_player.position);
+        }
+
         if (_agent.hasPath)
         {
             if (CanAttackPlayer())

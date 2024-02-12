@@ -21,7 +21,7 @@ public class State
 
     private float _visDis = 20.0f;
     private float _visAngle = 30.0f;
-    private float _fireDist = 10.0f;
+    private float _fireDist = 12.0f;
 
     public State(GameObject _npc, NavMeshAgent _agent, Animator _anim, Transform _player)
     {
