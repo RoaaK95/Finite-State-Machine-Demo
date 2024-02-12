@@ -10,7 +10,7 @@ public class Dragon : MonoBehaviour
     private Animator _anim;
     [SerializeField] private Transform _player;
     private float _startTime = 2.0f;
-    private float _freq = 0.5f;
+    private float _freq = 0.2f;
     void Awake()
     {
         _agent = GetComponent<NavMeshAgent>();
@@ -20,9 +20,9 @@ public class Dragon : MonoBehaviour
     void Start()
     {
         _currentState = new Idle(gameObject, _agent, _anim, _player);
-        InvokeRepeating("UpateProcess", _startTime, _freq);
+        InvokeRepeating("UpdateProcess", _startTime, _freq);
     }
-    void UpateProcess()
+    void UpdateProcess()
     {
         _currentState = _currentState.Process();
     }

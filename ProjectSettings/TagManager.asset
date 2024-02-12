@@ -7,7 +7,7 @@ TagManager:
   - Dragon
   - CinemachineTarget
   - Checkpoint
-  - Safe
+  - Trap
   layers:
   - Default
   - TransparentFX

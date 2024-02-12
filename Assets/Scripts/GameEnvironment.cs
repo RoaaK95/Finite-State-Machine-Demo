@@ -8,7 +8,7 @@ public sealed class GameEnvironment
     private static GameEnvironment _instance;
     private List<GameObject> _checkpoints = new List<GameObject>();
     public List<GameObject> _Checkpoints { get { return _checkpoints; } }
-
+     
     public static GameEnvironment Singleton
     {
         get
