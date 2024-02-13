@@ -20,7 +20,7 @@ public class State
     protected State _nextState;
 
     private float _visDis = 20.0f;
-    private float _visAngle = 30.0f;
+    private float _visAngle = 45.0f;
     private float _fireDist = 12.0f;
 
     public State(GameObject _npc, NavMeshAgent _agent, Animator _anim, Transform _player)
@@ -51,7 +51,7 @@ public class State
     public bool CanSeePlayer()
     {
         Vector3 direction = _player.position - _npc.transform.position;
-        float angle = Vector3.Angle(direction, _npc.transform.forward);
+        float angle = Vector3.Angle(direction, _npc.transform.position);
         if (direction.magnitude < _visDis && angle < _visAngle)
         {
             return true;

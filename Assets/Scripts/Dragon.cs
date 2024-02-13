@@ -5,6 +5,7 @@ using UnityEngine.AI;
 
 public class Dragon : MonoBehaviour
 {
+    [SerializeField] private ParticleSystem _fireShield;
     private NavMeshAgent _agent;
     private State _currentState;
     private Animator _anim;
@@ -32,6 +33,7 @@ public class Dragon : MonoBehaviour
         if (other.CompareTag("Trap"))
         {
             _currentState = new Die(gameObject, _agent, _anim, _player);
+            _fireShield.Stop();
         }
     }
 }

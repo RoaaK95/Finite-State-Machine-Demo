@@ -5,7 +5,7 @@ using UnityEngine.AI;
 
 public class Walk : State
 {
-    private int _currentIndex = -1;
+     int _currentIndex = -1;
     public Walk(GameObject _npc, NavMeshAgent _agent, Animator _anim, Transform _player) : base(_npc, _agent, _anim, _player)
     {
         _name = STATE.WALK;
@@ -44,6 +44,7 @@ public class Walk : State
             }
             _agent.SetDestination(GameEnvironment.Singleton._Checkpoints[_currentIndex].transform.position);
         }
+
         if (CanSeePlayer())
         {
             _nextState = new Pursue(_npc, _agent, _anim, _player);
