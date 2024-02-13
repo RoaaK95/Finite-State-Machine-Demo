@@ -16,7 +16,6 @@ public class Attack : State
     public override void Enter()
     {
         _anim.SetTrigger("isAttacking");
-        
         base.Enter();
     }
 
@@ -30,7 +29,7 @@ public class Attack : State
 
         if (!CanAttackPlayer())
         {
-            _nextState = new Idle(_npc, _agent, _anim, _player);
+            _nextState = new Walk(_npc, _agent, _anim, _player);
             _stage = EVENT.EXIT;
         }
     }

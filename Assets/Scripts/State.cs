@@ -51,7 +51,7 @@ public class State
     public bool CanSeePlayer()
     {
         Vector3 direction = _player.position - _npc.transform.position;
-        float angle = Vector3.Angle(direction, _npc.transform.position);
+        float angle = Vector3.Angle(direction, _npc.transform.forward);
         if (direction.magnitude < _visDis && angle < _visAngle)
         {
             return true;
