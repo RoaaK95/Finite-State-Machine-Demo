@@ -1,6 +1,30 @@
-AI Finite-State-Machine project -  UNITY ver 2022.3.17f1.  
-Description: Using a finite-state-machine model to control the animation of an AI dragon character.  
+# Finite-State-Machine  
+## About
+- **Project Name:** Dragon's Pit  
+- **Engine:** Unity, version 2022.3.17f1  
+- For a detailed explanation of this project, [click here](https://roaak95.github.io/Portfolio/Projects/FSM.html).
 
- ![Screenshot (327)](https://github.com/RoaaK95/Finite-State-Machine-Demo/assets/101067760/9fa3bc29-4065-4482-8992-d079fe37384d)  
- 
-![Screenshot (328)](https://github.com/RoaaK95/Finite-State-Machine-Demo/assets/101067760/d7f42d63-e9a5-434e-afee-18b181f2d109)
+## Description  
+Using AI finite-state-machine model to control the animation of a dragon agent.  
+  
+### Details
+**Player:**  
+- FPS character    
+
+**AI Agent:** 
+- Dragon
+
+### Agent Animations:  
+- Idle
+- Walk
+- Pursue
+- Attack
+- Die
+
+## Game View  
+
+![Idle](https://github.com/user-attachments/assets/5dc05b97-0266-4e71-8818-3b1604239b8a)
+  
+## Aniamtion System  
+  
+![Animator](https://github.com/user-attachments/assets/431d5dd0-04b9-49fa-8684-a9b122741d9e)
