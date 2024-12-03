@@ -2,7 +2,7 @@
 ## About
 - **Project Name:** Dragon's Pit  
 - **Engine:** Unity, version 2022.3.17f1  
-- For a detailed explanation of this project, [click here](https://roaak95.github.io/Portfolio/Projects/FSM.html)
+- For a detailed explanation of this project, [click here](https://roaakhaldoon.net/Projects/FSM.html)
 
 ## Description  
 Using AI finite-state-machine model to control the animation of a dragon agent.  
